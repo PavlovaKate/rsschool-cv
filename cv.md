@@ -1,6 +1,6 @@
 # Ekaterina Pavlova
 
-![Photo of E.Pavlova](..\img\KatePavlova.jpg)
+![Photo of E.Pavlova](./img/KatePavlova.jpg)
 
 ## Contact information:
 
