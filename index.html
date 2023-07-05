@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CV Ekaterina Pavlova</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#contact">Contacts</a></li>
+          <li><a href="#about">About Myself</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
     <h1>Ekaterina Pavlova</h1>
-    <img src="./img/KatePavlova.jpg" alt="Photo of E.Pavlova" />
-    <h2>Contact information:</h2>
+    <img src="./img/KatePavlova.jpg" alt="Photo of E.Pavlova">
+    <h2 id="contact">Contact information:</h2>
     <ul>
       <li>Phone: +7 911 0224246</li>
       <li>E-mail: kv.pavlova@mail.ru</li>
@@ -19,7 +32,7 @@
         <a href="https://github.com/PavlovaKate" target="_blank">PavlovaKate</a>
       </li>
     </ul>
-    <h2>About Myself:</h2>
+    <h2 id="about">About Myself:</h2>
     <p>
       I’ve been working quite long as a specialist in financial department of
       international brokerage company. However, I recently realized that I no
@@ -29,25 +42,30 @@
       development.That's why I started RS School course thanks to which I want
       dive into this field more and more and explore its branches.
     </p>
-    <h2>Skills:</h2>
+    <h2 id="skills">Skills:</h2>
     <ul>
       <li>HTML basic</li>
       <li>CSS basic</li>
     </ul>
-    <h2>Code example:</h2>
+    <h2 id="code">Code example:</h2>
     <code> function booleanToString(b) { return b ? 'true' : 'false';} </code>
     <h2>Experience:</h2>
-    <p>CV#1. Markdown &amp; Git</p>
-    <h2>Education:</h2>
+    <a href="https://github.com/PavlovaKate/rsschool-cv/tree/gh-pages">CV#1. Markdown &amp; Git</a>
+    <h2 id="education">Education:</h2>
     <p>ITMO University: Master’s degree in Innovative entrepreneurship</p>
     <p>Saint-Petersburg Mining University: Bachelor’s degree in Management</p>
-    <h2>Courses:</h2>
-    <p>Udemy: "Design and develop a killer website with HTML5 and CSS3"</p>
-    <h2>Languages:</h2>
+    <p>Udemy course: "Design and develop a killer website with HTML5 and CSS3"</p>
+    <h2 id="languages">Languages:</h2>
     <ul>
       <li>English - Upper-intermediate</li>
       <li>Russian - Native</li>
       <li>Belarusian - Native</li>
     </ul>
+  </main>
+  <footer>
+    <a href="https://github.com/PavlovaKate" target="_blank">PavlovaKate</a>
+    <p>&copy; 2023</p>
+    <a href="https://rs.school/js/"><img src="./img/rs_school_js.svg" alt="RS School Logo"></a>
+  </footer>
   </body>
 </html>
