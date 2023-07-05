@@ -3,69 +3,109 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>CV Ekaterina Pavlova</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#contact">Contacts</a></li>
-          <li><a href="#about">About Myself</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#code">Code</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#languages">Languages</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About Myself</a></li>
+            <li><a href="#contact" class="nav-link">Contacts</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#code" class="nav-link">Code</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#languages" class="nav-link">Languages</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-    <h1>Ekaterina Pavlova</h1>
-    <img src="./img/KatePavlova.jpg" alt="Photo of E.Pavlova">
-    <h2 id="contact">Contact information:</h2>
-    <ul>
-      <li>Phone: +7 911 0224246</li>
-      <li>E-mail: kv.pavlova@mail.ru</li>
-      <li>Telegram: @power_kate</li>
-      <li>
-        GitHub:
-        <a href="https://github.com/PavlovaKate" target="_blank">PavlovaKate</a>
-      </li>
-    </ul>
-    <h2 id="about">About Myself:</h2>
-    <p>
-      I’ve been working quite long as a specialist in financial department of
-      international brokerage company. However, I recently realized that I no
-      longer enjoy this job. I believe that working with passion allows you to
-      achieve your goals much faster and it’s core element of the working
-      process. Out of the blue I began to be interested in Front-end
-      development.That's why I started RS School course thanks to which I want
-      dive into this field more and more and explore its branches.
-    </p>
-    <h2 id="skills">Skills:</h2>
-    <ul>
-      <li>HTML basic</li>
-      <li>CSS basic</li>
-    </ul>
-    <h2 id="code">Code example:</h2>
-    <code> function booleanToString(b) { return b ? 'true' : 'false';} </code>
-    <h2>Experience:</h2>
-    <a href="https://github.com/PavlovaKate/rsschool-cv/tree/gh-pages">CV#1. Markdown &amp; Git</a>
-    <h2 id="education">Education:</h2>
-    <p>ITMO University: Master’s degree in Innovative entrepreneurship</p>
-    <p>Saint-Petersburg Mining University: Bachelor’s degree in Management</p>
-    <p>Udemy course: "Design and develop a killer website with HTML5 and CSS3"</p>
-    <h2 id="languages">Languages:</h2>
-    <ul>
-      <li>English - Upper-intermediate</li>
-      <li>Russian - Native</li>
-      <li>Belarusian - Native</li>
-    </ul>
-  </main>
-  <footer>
-    <a href="https://github.com/PavlovaKate" target="_blank">PavlovaKate</a>
-    <p>&copy; 2023</p>
-    <a href="https://rs.school/js/"><img src="./img/rs_school_js.svg" alt="RS School Logo"></a>
-  </footer>
+    <main class="main">
+      <div class="container">
+        <section class="section main">
+          <img src="./assets/img/KatePavlova.jpg" alt="Photo of E.Pavlova" class="avatar">
+          <h1 class="heading-primary">Ekaterina Pavlova</h1>
+        </section>
+        <section class="section">
+          <h2 id="about" class="heading-secondary">About Myself:</h2>
+          <p>
+          I’ve been working quite long as a specialist in financial department of
+          international brokerage company. However, I recently realized that I no
+          longer enjoy this job. I believe that working with passion allows you to
+          achieve your goals much faster and it’s core element of the working
+          process. Out of the blue I began to be interested in Front-end
+          development.That's why I started RS School course thanks to which I want
+          dive into this field more and more and explore its branches.
+          </p>
+        </section>
+        <div class="grid">
+        <section class="section">
+          <h2 id="contact" class="heading-secondary">Contact information:</h2>
+          <ul>
+            <li class="list-item">Russia, St.Petersburg</li>
+            <li class="list-item">Phone: +7 911 0224246</li>
+            <li class="list-item">E-mail: kv.pavlova@mail.ru</li>
+            <li class="list-item">Telegram: @power_kate</li>
+            <li class="list-item">
+              GitHub:
+              <a href="https://github.com/PavlovaKate" target="_blank" class="link">PavlovaKate</a>
+            </li>
+          </ul>
+        </section>
+        
+        <section class="section">
+          <h2 id="skills" class="heading-secondary">Skills:</h2>
+          <ul>
+            <li class="list-item">HTML basic</li>
+            <li class="list-item">CSS basic</li>
+          </ul>
+        </section>
+        <section class="section">
+          <h2 id="code" class="heading-secondary">Code example:</h2>
+          <pre>
+            <code> 
+            function booleanToString(b) {
+              return b ? 'true' : 'false';
+            }
+            </code>
+          </pre>
+        </section>
+        <section class="section">
+          <h2 id="projects" class="heading-secondary">Projects:</h2>
+          <a href="https://github.com/PavlovaKate/rsschool-cv/tree/gh-pages" target="_blank" class="link">CV#1. Markdown &amp; Git</a>
+        </section>
+        <section class="section">
+          <h2 id="education" class="heading-secondary">Education:</h2>
+          <p>ITMO University: Master’s degree in Innovative entrepreneurship</p>
+          <p>Saint-Petersburg Mining University: Bachelor’s degree in Management</p>
+          <p>Udemy course: "Design and develop a killer website with HTML5 and CSS3"</p>
+        </section>
+        <section class="section">
+          <h2 id="languages" class="heading-secondary">Languages:</h2>
+          <ul>
+            <li class="list-item">English - Upper-intermediate</li>
+            <li class="list-item">Russian - Native</li>
+            <li class="list-item">Belarusian - Native</li>
+          </ul>
+        </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <a href="https://github.com/PavlovaKate" target="_blank" class="footer-link">PavlovaKate</a>
+          <p>&copy; 2023</p>
+        </div>
+        <a href="https://rs.school/js/" target="_blank"><img src="./assets/svg/rs_school_js.svg" alt="RS School Logo" class="logo"></a>
+      </div>
+    </footer>
   </body>
 </html>
